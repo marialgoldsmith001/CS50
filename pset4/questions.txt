@@ -1,0 +1,39 @@
+0.  How many different colors does each format support?
+    BMP, JPEG, and PNG support up to 16.777.216
+    GIF support up to 256
+1.  Which of the formats support animation?
+    GIF
+2.  What's the difference between lossy and lossless compression?
+    Lossy compression reduces the information preventing the reconstrution of data while lossless compression allow reconstruction
+3.  Which of these formats is lossy-compressed?
+    JPEG
+4.  What happens technically speaking, when a file is deleted on a FAT file system?
+    The references to the data are deleted from the allocation table
+5.  What can someone like you do to ensure (with high probability) that files you delete canot be reecovered?
+    Eliminate the reference in the FAT and the data on the disk could be overwritten with zeros or other data
+6.  What is stdint.h?
+    It is a header file that declares integer types with certain widths 
+7.  What's the point of using uint8_t, uint32_y, int32_t, and uint16_t in a program?
+    This types are used to allow the programmer to write implementation independent code
+8.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+    8 bit, 32 bit, 32 bit, and 16 bit respectively.
+9.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? (Leading bytes use to identify file formats (with high probability) are generally called "magic numbers").
+    0x42 0x4d
+10. What is the diffrence berween bfSize and biSize?
+    bfSize holds the size of the bitmap file, while biSize is the size of the Bitmapinfoheader structure.
+11. What does it mean if biHeight is negative?
+    It suggests that the image is upside down
+12. What field in BITMAOINFOHEADER specifies the BMP's color depth (i.e., bits peer pixel)?
+    It is defined in a biBitCount
+13. Why might fopen return NULL in copy.c:37?
+    It would happens if the user has no write permission for the directory.
+14. Why is the third argument to fread always 1 in our code?
+    Because we want to copy one individual structure per read
+15. What value does copy.c:70 assign padding if bi.biwidth is 3?
+    Three
+16. What does fseek do?
+    It moves to a position pointer through a file stream
+17. What is SEEK_CUR?
+    Indicates the current position of the position pointer
+18. Whodunit?
+    ROB BOWDEN
